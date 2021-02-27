@@ -25,7 +25,7 @@ using namespace std;
 
 const int N = 700, M = 1e5 + 10;
 const double eps = 1e-4;
-int n = N, m;
+int m;
 int h[N], e[M], w[M], ne[M], idx;
 double dist[N];
 int cnt[N];
