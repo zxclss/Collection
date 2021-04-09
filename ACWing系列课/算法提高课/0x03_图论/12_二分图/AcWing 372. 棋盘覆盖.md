@@ -38,7 +38,7 @@ bool find(int i, int j) {
         PII t = match[x][y];
         //如果新点是空的 || 新点是已被放置的，但是和他放置的另外一个点可以再找一个匹配
         if (t.x == -1 || find(t.x, t.y)) {
-            match[x][y] = t;
+            match[x][y] = {i, j};
             return true;
         }
     }
